@@ -16,7 +16,7 @@ Cada vez que houve '\n\n' indicava que era uma designação e adicionou-se o @ p
 
 **HTML**
 
-Após o tratamento do texto, utilizamos o HTML para criar uma página. 
+Após o tratamento do texto, utilizou-se o HTML para criar uma página. 
 Definiu-se o título "Dicionário Médico", a descrição "Dicionário médico ddesenvolvido na disciplina de PLNEB" e as prioridades respetivas (cor da letra, cor do fundo, entre outras).
 Por fim, definiu-se o body, que representava os termos.
 Juntou-se as três variáveis para formar o HTML, que é visualizado na "aula3.html".
