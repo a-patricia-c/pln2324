@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-color: #fff9ea;
+}
+header {
+    padding: 20px;
+    text-align: left; 
+}
+.título{
+    width: 100%;
+    display: flex;
+    align-items: corner;
+    justify-content: space-around;
+}
+.fas fa-seedling{
+    font-weight: normal;
+    font-size: 20px;
+    position: relative;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.menu.active a{
+    border-bottom: 3px solid lightgreen;
+}
+
+.inicio{
+    position: relative;
+    width: 90%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.fotos{
+    width: 100%;
+    margin: 0 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 15px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+
+.img {
+    width: 280px;
+    height: 280px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px lightgray;
+ 
+}
+
+.legenda{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    
+}
+
+.descricao{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    max-width: 280px;
+    
+}
+
+.sobre{
+    position: relative;
+    width: 90%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-55%);
+    padding-left: 20px;
+}

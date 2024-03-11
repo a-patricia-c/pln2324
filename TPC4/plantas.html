@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Plantas</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="buttons.css"> 
+
+    </head>
+    <body>
+        <header>
+            <nav class="título">
+                <i class="fas fa-seedling">O MEU JARDIM</i>
+                <div class="menu active">
+                    <a href="#inicio" onclick="scrollToSection('inicio')">Início</a>
+                </div>
+                <div class="menu active">
+                    <a href="#plantas" onclick="scrollToSection('plantas')">Plantas</a>
+                </div>
+            </nav>
+        </header>
+
+        <section id="inicio" class="inicio">
+            <br><br><br>
+    
+            <h1>Suculentas</h1>
+            <br>
+            <div>
+            <p>Bem-vindos!</p>
+            <p>Devido à pandemia, ganhei uma paixão pelas plantas e comecei a ter um cantinho de plantas em casa. Comecei por adquirir suculentas, que são plantas fáceis de manter e não necessitam de muita atenção. 
+                Na galeria, estão expostas algumas das seculentas que possuo, o seu nome e uma pequena descrição.
+            </p>
+            </div>
+            <br><br>
+        </section>
+        
+
+        <section id="plantas" class="plantas">
+            <div class="fotos"> 
+                
+                <div class="planta">
+                    <img class="img" src="1.jpeg">
+                    <h2 class="legenda">
+                        <i>Sedum Morganianum</i>
+                    </h2>
+                    <p class="descricao">
+                        <i>Sedum morganianum</i>, também conhecido como "dedo da moça", possui folhas carnudas e arredondadas, dispostas ao longo de caules pendentes. Produz flores pequenas brancas ou rosadas no verão.
+                    </p>
+                </div>
+
+                <div class="planta">
+                    <img class="img" src="2.jpeg">
+                    <h2 class="legenda">
+                        <i>Ceropegia mixta</i>
+                    </h2>
+                    <p class="descricao">
+                        <i>Ceropegia mixta</i> conhecida por cacto estrela do mar, dá flores com um formato excepcional de estrela-do-mar.
+                    </p>
+                </div>
+
+                <div class="planta">
+                    <img class="img" src="3.jpeg">
+                    <h2 class="legenda">
+                        <i>Aloe variegata</i>
+                    </h2>
+                    <p class="descricao">
+                        <i>Aloe variegata</i>, conhecida por aloe tigre, tem folhas triangulares dispostas em formato de prateleira.
+                    </p>
+                </div>
+
+                <div class="planta">
+                    <img class="img" src="4.jpeg">
+                    <h2 class="legenda">
+                        <i>Aloe aculeata</i>
+                    </h2>
+                    <p class="descricao">
+                        <i>Aloe aculeata</i> são suculentas sem caules com folhas longas e espessas com uma borda em forma de serra. 
+                    </p>
+                </div>
+
+                <div class="planta">
+                    <img class="img" src="5.jpeg">
+                    <h2 class="legenda">
+                        <i>Cotyledon Tomentosa</i>
+                    </h2>
+                    <p class="descricao">
+                        <i>Cotyledon Tomentosa</i> tem lindas folhas verdes, felpudas, ovais e grossas, e as bordas dessas folhas são dentadas e com um tom de vermelho escuro, que lembra garras de um urso.
+                    </p>
+                </div>
+
+                <div class="planta">
+                    <img class="img" src="6.jpeg">
+                    <h2 class="legenda">
+                        <i>Haworthia fasciata</i>
+                    </h2>
+                    <p class="descricao">
+                        <i>Haworthia fasciata</i> conhecida por planta zebra, tem folhas triangulares verdes com listras brancas. 
+                    </p>
+                </div>
+            </div> 
+        </section>
+        
+
+    <script>
+        function scrollToSection(classid){
+            var class_ = document.getElementsByClassName(classid);
+            window.scrollTo({
+                top: class_.offsetTop,
+                behaviour: "smooth"
+            });
+        }
+    </script>
+
+    </body>
+</html>
