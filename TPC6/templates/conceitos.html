@@ -1,0 +1,12 @@
+{% extends 'Parent.html' %}
+
+{%  block body %}
+
+<div class="list-group">
+    {% for key, value in conceitos.items() %}
+        <a href="/conceitos/{{ key }}" class="list-group-item list-group-item-action">{{ key }}</a>
+    {% endfor %}
+
+</div>
+
+{% endblock %}
