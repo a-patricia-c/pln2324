@@ -1,0 +1,64 @@
+{% extends 'Parent.html' %}
+
+{%  block body %}
+
+<div class="card text-center  mt-5">
+  <div class="card-header">
+     <h3> Adicionar conceito novo </h3>
+  </div>
+</div>
+
+<form action="/conceitos" method="POST">
+  <div class="form-group">
+    <label for="exampleInputPassword1">Designação</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" name="designacao">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Descrição</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" name="descricao">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Tradução EN</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" name="en">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<hr>
+
+<form action="/pesquisar_conceitos" method="GET">
+  <div class="form-group">
+    <label for="search">Pesquisar Conceitos:</label>
+    <input type="text" class="form-control" id="search" name="q">
+  </div>
+  <button type="submit" class="btn btn-primary">Pesquisar</button>
+</form>
+
+{% if results %}
+<div class="list-group">
+    {% for key, value in results.items() %}
+        <a href="/conceitos/{{ key }}" class="list-group-item list-group-item-action">{{ key }}</a>
+    {% endfor %}
+</div>
+{% else %}
+<p>Nenhum resultado encontrado.</p>
+{% endif %}
+
+<hr>
+
+<div class="card text-center  mt-5">
+  <div class="card-header">
+     <h5> Conceitos </h5>
+  </div>
+</div>
+
+<div class="list-group">
+    {% for key, value in conceitos.items() %}
+        <a href="/conceitos/{{ key }}" class="list-group-item list-group-item-action">{{ key }}</a>
+    {% endfor %}
+</div>
+
+{% endblock %}
+

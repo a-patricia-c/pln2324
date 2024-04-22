@@ -1,0 +1,19 @@
+{% extends 'Parent.html' %}
+
+{%  block body %}
+
+    <div class="px-2 text-secondary text-center text-dark">
+        <h1>{{ conceito }}</h1>
+    </div>
+
+    <div class="bg-light text-center text-dark">
+        <p>{{ designacao["desc"] }}</p>
+        <p>Inglês: {{ designacao["en"] }}</p>
+    </div>
+
+    <div class="list-group">
+        <a href="/conceitos" type="button" class="btn btn-sm btn-primary">Voltar</a>
+        <button class="btn btn-sm btn-primary" onclick = "delete_conceito('{{ key }}')">Apagar</button>
+    </div>
+
+{% endblock %}
